@@ -1,0 +1,21 @@
+0. If you run a 64 bit system, on terminal do this
+   - sudo yum install glibc.i686 zlib.i686 libstdc++-devel.i686
+
+1. Download the package from https://developer.android.com/sdk/index.html
+2. Extract the package under /tmp
+3. Open terminal and install jdk-devel
+   - sudo yum install java-1.8.0-openjdk-devel
+4. Relocate the Android Studio package
+   - sudo su
+   - chown -R root:root /tmp/android-studio && mv /tmp/android-studio /opt
+5. Make symbolic lynk for quick launch
+   - ln -s /opt/android-studio/bin/studio.sh /usr/local/bin/asb
+   - exit
+   
+6. Check Java environment
+   - echo $JAVA_HOME
+   If it isn't /usr/lib/jvm/default-java, type:
+   - export JAVA_HOME=/usr/lib/jvm/default-java
+   
+7. To run Android Studio, type:
+   - asb
