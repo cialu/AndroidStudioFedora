@@ -1,0 +1,16 @@
+To create a Gnome Launcher in Fedora 21 for Android Studio,
+open a Terminal window and type:
+  - sudo vi /usr/share/applications/asb.desktop
+  
+Edit the file like this:
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Android Studio
+Comment=Android Studio 1-0
+Exec=asb
+Icon=/opt/android-studio/bin/idea.png
+Terminal=false
+Type=Application
+Categories=GNOME;Application;Development;
+StartupNotify=true
