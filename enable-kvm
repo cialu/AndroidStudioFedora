@@ -1,0 +1,9 @@
+Enable kvm virt acceleration for Android Virtual Device emulator
+
+Open Terminal window and type:
+  - su -c "yum install @virtualization"
+  - su -c "systemctl start libvirtd"
+  
+Verify that the kvm kernel modules were properly loaded
+  - lsmod | grep kvm
+  If you see kvm_amd or kvm_intel, you're on the way!
