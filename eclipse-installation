@@ -1,0 +1,37 @@
+---------------- 
+Install Eclipse, Android SDK and Eclipse Android binding
+---------------- 
+
+Open Terminal window and type:
+  - sudo yum -y install eclipse
+(Eclipse Luna will be installed on Fedora 21 at Dec 2014)
+  
+Download SDK from page:
+  https://developer.android.com
+(If you have installed Android Studio, the Android SDK is already installed)
+
+Start Eclipse, then select Help > Install new software
+Click Add and insert:
+  - http://download.eclipse.org/releases/luna/ or your version of Eclipse
+  - https://dl-ssl.google.com/android/eclipse/ 
+Restart Eclipse and Go to Window -> Preferences, click on Android and set SDK location to directory(e.g /home/user/Android/SDK)
+Click Apply and OK.
+Restart Eclipse
+
+
+---------------- 
+Optional JAVA Gnome Gtk bind for Eclipse
+---------------- 
+
+Open Terminal window and type:
+sudo yum install libjava-gnome-java
+
+In Eclipse, to compile with Java-Gnome bindings:
+  - Select your Java App > Properties 
+  - Java Build Path > Libraries > Add External JARs
+  - Choose 64 Bit Environment --> /usr/lib64/java-gnome/gtk.jar
+           32 Bit Environment --> /usr/lib/java-gnome/gtk.jar
+           
+           
+All references at http://java-gnome.sourceforge.net
+
