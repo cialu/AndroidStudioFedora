@@ -1,0 +1,7 @@
+Both Eclipse with Android SDK and Android Studio under Ubuntu, sometimes, show an issue about libraries:
+'..build-tools/21.1.2/aapt: error while loading shared libraries: libz.so.1: cannot open shared object file: No such file or directory'
+
+I solved this issue, using:
+sudo apt-get install lib32z1
+
+and cleaning my projects or restarting the dev program.
