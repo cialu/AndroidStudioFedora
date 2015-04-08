@@ -15,3 +15,9 @@ Troubleshooting
 ===============
 Recommended other packages:
   - sudo yum install virt-manager libvirt libvirt-python python-virtinst
+
+If you have another issues, try:
+  - sudo modprobe kvm
+  - sudo modprobe kvm_intel
+  - sudo modprobe kvm_amd
+  in base of your processor.
