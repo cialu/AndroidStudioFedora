@@ -14,3 +14,6 @@ Terminal=false
 Type=Application
 Categories=GNOME;Application;Development;
 StartupNotify=true
+
+Alternatively use the function provided by Android Studio:
+  Menu --> Tools --> Create Desktop Entry...
