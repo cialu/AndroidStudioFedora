@@ -9,8 +9,15 @@
    - sudo su
    - chown -R root:root /tmp/android-studio && mv /tmp/android-studio /opt
 5. Make symbolic lynk for quick launch
-   - ln -s /opt/android-studio/bin/studio.sh /usr/local/bin/asb
-   - exit
+   -) Using command line
+      - ln -s /opt/android-studio/bin/studio.sh /usr/local/bin/asb
+      - exit
+   -) Using Android Studio (see quick-launch_via_Android_Studio.png)
+      - Run Andorid Studio with ./opt/android-studio/bin/studio.sh
+      - Menu > Tools > Create Command-line Launcher...
+         - Name: asb
+         - Path: /usr/local/bin
+      - Click OK
    
 6. Check Java environment
    - echo $JAVA_HOME
