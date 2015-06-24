@@ -16,4 +16,5 @@ Categories=GNOME;Application;Development;
 StartupNotify=true
 
 Alternatively use the function provided by Android Studio:
-  Menu --> Tools --> Create Desktop Entry...
+  Menu > Tools > Create Desktop Entry...
+  See gnome-launcher_via_Android_Studio.png for screenshot.
