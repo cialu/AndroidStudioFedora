@@ -1,14 +1,18 @@
-0. If you run a 64 bit system, on terminal do this
-   - sudo yum install glibc.i686 zlib.i686 libstdc++-devel.i686
+- If you run a 64 bit system, in a terminal window do this
+**sudo dnf install zlib-devel.i686 ncurses-devel.i686 ant**
 
-1. Download the package from https://developer.android.com/sdk/index.html
-2. Extract the package under /tmp
-3. Open terminal and install jdk-devel
-   - sudo yum install java-1.8.0-openjdk-devel
-4. Relocate the Android Studio package
-   - sudo su
-   - chown -R root:root /tmp/android-studio && mv /tmp/android-studio /opt
-5. Make symbolic lynk for quick launch
+- Install libs for mksdcard SDK Tool
+**sudo dnf install compat-libstdc++-296.i686 compat-libstdc++-33.i686 compat-libstdc++-33.x86_64**
+
+- Install Java development tools
+**sudo dnf install java-1.8.0-openjdk-devel.x86_64**
+   
+- Download the Android Studio package from **http://developer.android.com/sdk/index.html**
+
+- Extract the package (it's ok also the Downloads folder) and relocate the Android Studio folder
+**mv /home/yourUserName/Downloads/android-studio /opt**
+
+- Make symbolic lynk for a quick launch
    -) Using command line
       - ln -s /opt/android-studio/bin/studio.sh /usr/local/bin/asb
       - exit
@@ -18,11 +22,16 @@
          - Name: asb
          - Path: /usr/local/bin
       - Click OK
+   -) Using Alacarte (sudo dnf install alacarte)
+      - New item under Programming
+      - Browse to /opt/android-studio/bin/studio.sh
+      - Browse icon to /opt/android-studio/bin/studio.png
    
-6. Check Java environment
+- Check Java environment
    - echo $JAVA_HOME
    If it isn't /usr/lib/jvm/default-java, type:
    - export JAVA_HOME=/usr/lib/jvm/default-java
    
-7. To run Android Studio, type:
-   - asb
+- Run Android Studio and enjoy it
+   - Typing asb in terminal
+   - Using Android Studio icon in launcher
