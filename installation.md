@@ -13,16 +13,16 @@
 **mv /home/yourUserName/Downloads/android-studio /opt**
 
 - Make symbolic lynk for a quick launch
-   -) Using command line
+   - Using command line
       - ln -s /opt/android-studio/bin/studio.sh /usr/local/bin/asb
       - exit
-   -) Using Android Studio (see quick-launch_via_Android_Studio.png)
+   - Using Android Studio (see quick-launch_via_Android_Studio.png)
       - Run Andorid Studio with ./opt/android-studio/bin/studio.sh
       - Menu > Tools > Create Command-line Launcher...
          - Name: asb
          - Path: /usr/local/bin
       - Click OK
-   -) Using Alacarte (sudo dnf install alacarte)
+   - Using Alacarte (sudo dnf install alacarte)
       - New item under Programming
       - Browse to /opt/android-studio/bin/studio.sh
       - Browse icon to /opt/android-studio/bin/studio.png
