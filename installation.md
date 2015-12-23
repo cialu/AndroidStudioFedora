@@ -2,7 +2,7 @@
 **sudo dnf install zlib-devel.i686 ncurses-devel.i686 ant**
 
 - Install libs for mksdcard SDK Tool
-**sudo dnf install compat-libstdc++-296.i686 compat-libstdc++-33.i686 compat-libstdc++-33.x86_64**
+**sudo dnf install compat-libstdc++-296.i686 compat-libstdc++-33.i686 compat-libstdc++-33.x86_64 glibc.i686 glibc-devel.i686 libstdc++.i686 libX11-devel.i686 libXrender.i686 libXrandr.i686**
 
 - Install Java development tools
 **sudo dnf install java-1.8.0-openjdk-devel.x86_64**
