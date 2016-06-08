@@ -4,7 +4,7 @@ Kvm
 Enable kvm virt acceleration for Android Virtual Device emulator
 
 Open Terminal window and type:
-  - su -c "yum install @virtualization"
+  - su -c "dnf install @virtualization"
   - su -c "systemctl start libvirtd"
   
 Verify that the kvm kernel modules were properly loaded
@@ -14,7 +14,7 @@ Verify that the kvm kernel modules were properly loaded
 Troubleshooting
 ===============
 Recommended other packages:
-  - sudo yum install virt-manager libvirt libvirt-python python-virtinst
+  - sudo dnf install virt-manager libvirt libvirt-python python-virtinst
 
 If you have another issues, try:
   - sudo modprobe kvm
